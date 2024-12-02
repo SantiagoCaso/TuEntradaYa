@@ -6,6 +6,7 @@ namespace TuEntradaYa.Models.Entities
     public class Tickets
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         public int EventId { get; set; }
