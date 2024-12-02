@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Migrations\\20241202003031_TicketId Auto Increment on table Tickets \u0026 ITicketService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241202003031_TicketId Auto Increment on table Tickets \u0026 ITicketService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\models\\entities\\tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:models\\entities\\tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\services\\interfaces\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:services\\interfaces\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\services\\implementations\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:services\\implementations\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\models\\dtos\\tickets\\createticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,53 +78,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241202003031_TicketId Auto Increment on table Tickets \u0026 ITicketService.cs",
-              "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Migrations\\20241202003031_TicketId Auto Increment on table Tickets \u0026 ITicketService.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241202003031_TicketId Auto Increment on table Tickets \u0026 ITicketService.cs",
-              "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Migrations\\20241202003031_TicketId Auto Increment on table Tickets \u0026 ITicketService.cs",
-              "RelativeToolTip": "Migrations\\20241202003031_TicketId Auto Increment on table Tickets \u0026 ITicketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "TicketsController.cs",
+              "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Controllers\\TicketsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TicketsController.cs",
+              "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Controllers\\TicketsController.cs",
+              "RelativeToolTip": "Controllers\\TicketsController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T00:30:31.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Tickets.cs",
-              "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Models\\Entities\\Tickets.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Tickets.cs",
-              "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Models\\Entities\\Tickets.cs",
-              "RelativeToolTip": "Models\\Entities\\Tickets.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T00:26:58.996Z",
+              "WhenOpened": "2024-12-02T00:42:54.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T00:41:24.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TicketService.cs",
+              "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Services\\Implementations\\TicketService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\TicketService.cs",
+              "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Services\\Implementations\\TicketService.cs",
+              "RelativeToolTip": "Services\\Implementations\\TicketService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAQwCEAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T00:36:07.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CreateTicketDto.cs",
               "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Models\\Dtos\\Tickets\\CreateTicketDto.cs",
               "RelativeDocumentMoniker": "Models\\Dtos\\Tickets\\CreateTicketDto.cs",
               "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Models\\Dtos\\Tickets\\CreateTicketDto.cs",
               "RelativeToolTip": "Models\\Dtos\\Tickets\\CreateTicketDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T00:25:55.029Z"
+              "WhenOpened": "2024-12-02T00:25:55.029Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ITicketService.cs",
               "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Services\\Interfaces\\ITicketService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\ITicketService.cs",
               "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Services\\Interfaces\\ITicketService.cs",
               "RelativeToolTip": "Services\\Interfaces\\ITicketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T00:20:34.143Z"
+              "WhenOpened": "2024-12-02T00:20:34.143Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -56,6 +56,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IEventService, EventService>();
 //builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ITicketService, TicketService>();    
 var connectionString = builder.Configuration.GetConnectionString("TuEntradaYaDB");
 builder.Services.AddDbContext<TuEntradaYaContext>(options =>
 {

@@ -151,6 +151,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TuEntradaYa.Controllers.TicketsController",
+    "Method": "GetTikets",
+    "RelativePath": "api/tickets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TuEntradaYa.Controllers.TicketsController",
+    "Method": "AddTikets",
+    "RelativePath": "api/tickets/add-ticket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticket",
+        "Type": "TuEntradaYa.Models.Dtos.Tickets.CreateTicketDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TuEntradaYa.Controllers.UserController",
     "Method": "GetUserById",
     "RelativePath": "api/users/{id}",

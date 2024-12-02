@@ -1,4 +1,6 @@
-﻿using TuEntradaYa.Models.Entities;
+﻿using TuEntradaYa.Models.Dtos.Categories;
+using TuEntradaYa.Models.Dtos.Tickets;
+using TuEntradaYa.Models.Entities;
 
 namespace TuEntradaYa.Services.Interfaces
 {
@@ -6,6 +8,8 @@ namespace TuEntradaYa.Services.Interfaces
     {
         List<Tickets> GetTickets();
 
-        bool AddTikets();
+        bool AddTikets(CreateTicketDto ticket);
+
+        // List<Tickets> GetTicketsByEventName(string eventName);
     }
 }
