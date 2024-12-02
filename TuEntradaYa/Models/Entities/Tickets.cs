@@ -13,7 +13,6 @@ namespace TuEntradaYa.Models.Entities
         [ForeignKey("EventId")]
         public Events? Event {  get; set; }
 
-        
         public int CategoryId { get; set; }
 
         [ForeignKey("CategoryId")]

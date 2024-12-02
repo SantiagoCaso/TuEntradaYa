@@ -54,7 +54,8 @@ builder.Services.AddAuthentication("Bearer") //"Bearer" es el tipo de auntentica
 // Interfaces
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IEventService, EventService>();
-builder.Services.AddScoped<IOrderService, OrderService>();
+//builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 var connectionString = builder.Configuration.GetConnectionString("TuEntradaYaDB");
 builder.Services.AddDbContext<TuEntradaYaContext>(options =>
 {

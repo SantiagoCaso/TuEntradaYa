@@ -16,6 +16,42 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TuEntradaYa.Controllers.CategoryController",
+    "Method": "AddCategory",
+    "RelativePath": "api/categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "TuEntradaYa.Models.Dtos.Categories.CreateCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TuEntradaYa.Controllers.CategoryController",
+    "Method": "GetAllCategories",
+    "RelativePath": "api/categories/all-categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TuEntradaYa.Models.Entities.Categories, TuEntradaYa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "TuEntradaYa.Controllers.EventController",
     "Method": "GetEventById",
     "RelativePath": "api/events/{id}",
