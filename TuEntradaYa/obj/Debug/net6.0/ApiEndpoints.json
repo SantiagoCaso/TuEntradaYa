@@ -162,6 +162,32 @@
   },
   {
     "ContainingType": "TuEntradaYa.Controllers.TicketsController",
+    "Method": "GetTicketsByEventId",
+    "RelativePath": "api/tickets/{eventId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eventId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TuEntradaYa.Models.Entities.Tickets, TuEntradaYa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TuEntradaYa.Controllers.TicketsController",
     "Method": "AddTikets",
     "RelativePath": "api/tickets/add-ticket",
     "HttpMethod": "POST",
@@ -175,6 +201,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TuEntradaYa.Controllers.TicketsController",
+    "Method": "GetTicketsSumByEventId",
+    "RelativePath": "api/tickets/total-tickes-by-event/{eventId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eventId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "TuEntradaYa.Controllers.UserController",

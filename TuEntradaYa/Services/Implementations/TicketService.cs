@@ -34,5 +34,24 @@ namespace TuEntradaYa.Services.Implementations
             var tickets = _tuEntradaYaContext.Tickets.Include(e => e.Event).Include(c => c.Category).ToList(); 
             return tickets;
         }
+
+        public List<Tickets> GetTicketsByEventName(string eventName)
+        {
+            var tickets = _tuEntradaYaContext.Tickets.Include(e => e.Event).Include(c => c.Category).Where(t => t.Event != null && t.Event.Event == eventName).ToList();
+            return tickets;
+        }
+
+        public List<Tickets> GetTicketsByEventId(int eventId)
+        {
+            var tickets = _tuEntradaYaContext.Tickets.Include(t => t.Event).Include(c => c.Category).Where(e => e.EventId == eventId).ToList();
+            return tickets;
+        }
+        public int GetTicketsSumByEventId(int eventId)
+        {
+            var tickets = _tuEntradaYaContext.Tickets.Count(e => e.EventId == eventId);
+            return tickets;
+        }
+
     }
 }
+

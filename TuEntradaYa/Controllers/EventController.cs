@@ -27,7 +27,6 @@ namespace TuEntradaYa.Controllers
 
         [HttpPost("add-event")]
         // si pongo [Authorize] me pone que no se encuentra referencia de para la autorizacion o algo así 
-
         public IActionResult AddEvent([FromBody] EventCreateDto evento)
         {
             bool addEvent = _eventService.AddEvent(evento);
