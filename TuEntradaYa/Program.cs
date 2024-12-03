@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Security.Claims;
 using System.Text;
 using System.Text.Json.Serialization;
 using TuEntradaYa.DBContext;
@@ -43,13 +44,20 @@ builder.Services.AddAuthentication("Bearer") //"Bearer" es el tipo de auntentica
         {
             ValidateIssuer = true,
             ValidateAudience = true,
-            ValidateIssuerSigningKey = false,
+            ValidateIssuerSigningKey = true,
             ValidIssuer = builder.Configuration["Authentication:Issuer"],
             ValidAudience = builder.Configuration["Authentication:Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(builder.Configuration["Authentication:SecretForKey"]))
         };
     }
 );
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Admin", policy =>
+        policy.RequireClaim(ClaimTypes.Role, "Admin"));
+});
+
 
 // Interfaces
 builder.Services.AddScoped<IUserService, UserService>();
@@ -81,6 +89,7 @@ if (app.Environment.IsDevelopment())
 }
 
 
+app.UseAuthentication();
 
 app.UseHttpsRedirection();
 
