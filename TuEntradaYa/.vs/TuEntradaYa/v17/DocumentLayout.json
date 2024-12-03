@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\models\\dtos\\user\\userupatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:models\\dtos\\user\\userupatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\services\\implementations\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:services\\implementations\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\services\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:services\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|c:\\sourcecode\\crud mvc .net core\\tuentradaya\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DB90A85-F7DE-47AA-8126-50AB51CEEC38}|TuEntradaYa.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +94,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "UserUpateDto.cs",
+              "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Models\\Dtos\\User\\UserUpateDto.cs",
+              "RelativeDocumentMoniker": "Models\\Dtos\\User\\UserUpateDto.cs",
+              "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Models\\Dtos\\User\\UserUpateDto.cs",
+              "RelativeToolTip": "Models\\Dtos\\User\\UserUpateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T21:20:40.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IEventService.cs",
+              "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Services\\Interfaces\\IEventService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IEventService.cs",
+              "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Services\\Interfaces\\IEventService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IEventService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T21:16:18.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T21:09:18.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AuthenticateController.cs",
               "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Controllers\\AuthenticateController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthenticateController.cs",
@@ -83,28 +146,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T23:51:31.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Services\\Implementations\\EventService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\EventService.cs",
+              "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Services\\Implementations\\EventService.cs",
+              "RelativeToolTip": "Services\\Implementations\\EventService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwDoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T21:05:16.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Services\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\UserService.cs",
+              "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Services\\Implementations\\UserService.cs",
+              "RelativeToolTip": "Services\\Implementations\\UserService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAQwDYAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T21:05:33.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EventController.cs",
               "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "Controllers\\EventController.cs",
               "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Controllers\\EventController.cs",
               "RelativeToolTip": "Controllers\\EventController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwC0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T23:37:43.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\SourceCode\\CRUD MVC .NET Core\\TuEntradaYa\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCkAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T21:08:12.088Z",
               "EditorCaption": ""
             }
           ]

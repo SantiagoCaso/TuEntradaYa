@@ -12,7 +12,7 @@ namespace TuEntradaYa.Services.Interfaces
 
         bool AddUser(UserCreateDto user);
 
-        bool UpdateUser(UserUpateDto user);
+        bool UpdateUser(int userId, UserUpateDto user);
 
         bool DeleteUser(int userId);
 

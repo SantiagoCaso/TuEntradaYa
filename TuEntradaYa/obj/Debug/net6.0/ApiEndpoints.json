@@ -325,11 +325,16 @@
   {
     "ContainingType": "TuEntradaYa.Controllers.UserController",
     "Method": "UpdateUser",
-    "RelativePath": "api/users/update-user",
+    "RelativePath": "api/users/update-user/{userId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
       {
         "Name": "user",
         "Type": "TuEntradaYa.Models.Dtos.User.UserUpateDto",

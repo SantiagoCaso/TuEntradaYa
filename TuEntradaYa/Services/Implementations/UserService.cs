@@ -50,9 +50,9 @@ namespace TuEntradaYa.Services.Implementations
                 return true;
         }
 
-        public bool UpdateUser(UserUpateDto user)
+        public bool UpdateUser(int userId, UserUpateDto user)
         {
-            Users? userToUpdate = _tuEntradaYaContext.Users.FirstOrDefault(u => u.Id == user.Id);
+            Users? userToUpdate = _tuEntradaYaContext.Users.FirstOrDefault(u => u.Id == userId);
             userToUpdate.Name = user.Name;
             userToUpdate.LastName = user.LastName;
             userToUpdate.Password = user.Password;

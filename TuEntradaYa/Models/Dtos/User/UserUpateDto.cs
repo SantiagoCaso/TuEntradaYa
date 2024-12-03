@@ -4,8 +4,6 @@ namespace TuEntradaYa.Models.Dtos.User
 {
     public class UserUpateDto
     {
-        [Required]
-        public int Id { get; set; }
 
         [Required]
         [MaxLength(50)]

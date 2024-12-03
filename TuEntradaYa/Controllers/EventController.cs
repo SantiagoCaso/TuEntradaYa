@@ -26,7 +26,6 @@ namespace TuEntradaYa.Controllers
         }
 
         [HttpPost("add-event")]
-        // si pongo [Authorize] me pone que no se encuentra referencia de para la autorizacion o algo así 
         [Authorize(Policy = "Admin")]
         public IActionResult AddEvent([FromBody] EventCreateDto evento)
         {
@@ -35,7 +34,7 @@ namespace TuEntradaYa.Controllers
         }
 
         [HttpDelete("delete-event")]
-        // Poner [Authorize] 
+        [Authorize(Policy = "Admin")]
         public IActionResult DeleteEvent(int IdEvento)
         {
             bool eventDelete = _eventService.DeleteEvent(IdEvento);
@@ -43,8 +42,7 @@ namespace TuEntradaYa.Controllers
         }
 
         [HttpPut("update-event/{id}")]
-        // Poner [Authorize] 
-
+        [Authorize(Policy = "Admin")]
         public IActionResult UpdateEvent(int id, [FromBody] EventUpdateDto evento)
         {
 

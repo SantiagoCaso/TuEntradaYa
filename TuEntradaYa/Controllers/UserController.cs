@@ -38,10 +38,10 @@ namespace TuEntradaYa.Controllers
             return Ok("Se a creado el usuario " + newUser.Name);
         }
 
-        [HttpPut("update-user")]
-        public IActionResult UpdateUser([FromBody] UserUpateDto user)
+        [HttpPut("update-user/{userId}")]
+        public IActionResult UpdateUser(int userId, [FromBody] UserUpateDto user)
         {
-            bool userUpdate = _userService.UpdateUser(user);
+            bool userUpdate = _userService.UpdateUser(userId, user);
             return Ok("El usuario se a actualizado con exitoooooooo!");
         }
 

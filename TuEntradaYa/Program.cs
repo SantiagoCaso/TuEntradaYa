@@ -72,8 +72,6 @@ builder.Services.AddDbContext<TuEntradaYaContext>(options =>
 });
 
 
-// Authorization 
-
 
 
 
