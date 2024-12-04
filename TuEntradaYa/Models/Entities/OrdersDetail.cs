@@ -21,7 +21,7 @@ namespace TuEntradaYa.Models.Entities
         [ForeignKey("OrderId")]
         public Orders? Orders { get; set; }
 
-        public int TicketId { get; set; }
+        public int TicketId { get; set; } // esto tiene que ser un array de los Id de los tikets
 
         [ForeignKey("TicketId")]
         public Tickets? Tickets { get; set; }

@@ -1,9 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Swashbuckle.AspNetCore.Annotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace TuEntradaYa.Models.Dtos.User
 {
     public class UserUpateDto
     {
+        
+        public string Email { get; set; }
 
         [Required]
         [MaxLength(50)]

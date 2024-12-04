@@ -50,9 +50,15 @@ namespace TuEntradaYa.Services.Implementations
                 return true;
         }
 
-        public bool UpdateUser(int userId, UserUpateDto user)
+        public bool UpdateUser(string email, string password, UserUpateDto user)
         {
-            Users? userToUpdate = _tuEntradaYaContext.Users.FirstOrDefault(u => u.Id == userId);
+
+            Users? userToUpdate = _tuEntradaYaContext.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+
+            if (userToUpdate == null)
+            {
+                throw new UnauthorizedAccessException("Credenciales incorrectas: No se encontró un usuario con el email y contraseña proporcionados");
+            }
             userToUpdate.Name = user.Name;
             userToUpdate.LastName = user.LastName;
             userToUpdate.Password = user.Password;

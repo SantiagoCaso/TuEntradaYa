@@ -38,14 +38,24 @@ namespace TuEntradaYa.Controllers
             return Ok("Se a creado el usuario " + newUser.Name);
         }
 
-        [HttpPut("update-user/{userId}")]
-        public IActionResult UpdateUser(int userId, [FromBody] UserUpateDto user)
+        [Authorize]
+        [HttpPut("update-user/{email}")]
+        public IActionResult UpdateUser(string email, string password, [FromBody] UserUpateDto user)
         {
-            bool userUpdate = _userService.UpdateUser(userId, user);
-            return Ok("El usuario se a actualizado con exitoooooooo!");
+            try
+            {
+                bool userUpdate = _userService.UpdateUser(email, password, user);
+                return Ok("El usuario se a actualizado con exitoooooooo!");
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Unauthorized(ex.Message);
+            }
+            
         }
 
         [HttpDelete("delete-user")]
+        [Authorize(Policy = "Admin")]
         public IActionResult DeleteUser(int userId)
         {
             bool userIsDelete = _userService.DeleteUser(userId);

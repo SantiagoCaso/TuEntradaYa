@@ -151,6 +151,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TuEntradaYa.Controllers.OrderDetailController",
+    "Method": "GetOrdersDetails",
+    "RelativePath": "api/orders-detail/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TuEntradaYa.Models.Entities.OrdersDetail, TuEntradaYa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "TuEntradaYa.Controllers.TicketsController",
     "Method": "GetTikets",
     "RelativePath": "api/tickets",
@@ -325,15 +345,20 @@
   {
     "ContainingType": "TuEntradaYa.Controllers.UserController",
     "Method": "UpdateUser",
-    "RelativePath": "api/users/update-user/{userId}",
+    "RelativePath": "api/users/update-user/{email}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
-        "Type": "System.Int32",
+        "Name": "email",
+        "Type": "System.String",
         "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
       },
       {
         "Name": "user",

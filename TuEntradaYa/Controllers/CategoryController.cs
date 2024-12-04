@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TuEntradaYa.Models.Dtos.Categories;
 using TuEntradaYa.Models.Entities;
 using TuEntradaYa.Services.Implementations;
@@ -24,7 +25,7 @@ namespace TuEntradaYa.Controllers
         }
 
         [HttpPost]
-
+        [Authorize(Policy = "Admin")]
         public IActionResult AddCategory([FromBody] CreateCategoryDto category)
         {
             bool addCategory = _categoryService.AddCategory(category);

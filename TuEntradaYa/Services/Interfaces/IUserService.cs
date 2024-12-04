@@ -8,11 +8,9 @@ namespace TuEntradaYa.Services.Interfaces
         List<Users> GetAllUsers();
         public  Users? GetUserById(int id);
 
-        //public Users? GetUserByName(string name);
-
         bool AddUser(UserCreateDto user);
 
-        bool UpdateUser(int userId, UserUpateDto user);
+        bool UpdateUser(string email, string password, UserUpateDto user);
 
         bool DeleteUser(int userId);
 
