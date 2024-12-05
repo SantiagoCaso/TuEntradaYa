@@ -9,10 +9,12 @@ namespace TuEntradaYa.Services.Implementations
     public class OrderService : IOrderService
     {
         private readonly TuEntradaYaContext _tuEntradaYaContext;
+        private readonly IUserService _userService;
 
-        public OrderService(TuEntradaYaContext tuEntradaYaContext)
+        public OrderService(TuEntradaYaContext tuEntradaYaContext, IUserService userService)
         {
             _tuEntradaYaContext = tuEntradaYaContext;
+            _userService = userService;
         }
 
         public List<Orders> GetAllOrders()
@@ -35,12 +37,14 @@ namespace TuEntradaYa.Services.Implementations
                 return false;
             }
 
+            var ticket = _tuEntradaYaContext.Tickets.FirstOrDefault(t => t.Id == orderDto.TicketId);
+
             var order = new Orders
             {
                 UserId = orderDto.UserId,
                 CreateAt = orderDto.CreateAt,
                 TicketId = orderDto.TicketId,
-                Total = orderDto.Total
+                Total = ticket.Price + 778 // recargo por servicio 
             };
 
             _tuEntradaYaContext.Orders.Add(order);
@@ -59,6 +63,22 @@ namespace TuEntradaYa.Services.Implementations
             _tuEntradaYaContext.Orders.Remove(orderToDelete);
             _tuEntradaYaContext.SaveChanges();
             return true;
+        }
+
+        public List<Orders> GetOrderByUserName(string email, string password, string userName) 
+        {
+            Users? userLogIn = _userService.Authenticate(email, password);
+
+            if (userLogIn == null )
+            {
+                throw new UnauthorizedAccessException("Credenciales incorrectas: No se encontró un usuario con el email y contraseña proporcionados");
+            }
+
+            var orders = _tuEntradaYaContext.Orders.Include(u => u.Users)
+                .Include(t => t.Tickets).ThenInclude(e => e.Event)
+                .Include(t => t.Tickets).ThenInclude(e => e.Category)
+                .Where(u => u.Users.Name == userName).ToList();
+            return orders;  
         }
 
 

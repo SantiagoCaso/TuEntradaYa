@@ -18,6 +18,7 @@ namespace TuEntradaYa.Controllers
         }
 
         [HttpGet("all")]
+        [Authorize(Policy = "Admin")]
         public ActionResult<List<Users>> GetAllUsers()
         {
             var allUsers = _userService.GetAllUsers();
@@ -25,6 +26,7 @@ namespace TuEntradaYa.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Policy = "Admin")]
         public ActionResult<Users?> GetUserById(int id)
         {
             var user =  _userService.GetUserById(id);
@@ -66,7 +68,9 @@ namespace TuEntradaYa.Controllers
 
             return Ok("El usuario se ha eliminado"); 
         }
+
         [HttpGet("by-email/{email}")]
+        [Authorize(Policy = "Admin")]
         public IActionResult GetUserByEmail(string email)
         {
             var user =  _userService.GetUserByEmail(email);
@@ -76,6 +80,7 @@ namespace TuEntradaYa.Controllers
         }
 
         [HttpGet("username")]
+        [Authorize(Policy = "Admin")]
         public  ActionResult<Users?> GetUserByUsername(string username)
         {
             var user = _userService.GetUserByUsername(username);

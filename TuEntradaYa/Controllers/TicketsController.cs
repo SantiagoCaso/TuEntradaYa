@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TuEntradaYa.Models.Dtos.Tickets;
 using TuEntradaYa.Models.Entities;
 using TuEntradaYa.Services.Interfaces;
@@ -17,6 +18,7 @@ namespace TuEntradaYa.Controllers
         }
 
         [HttpPost("add-ticket")]
+        [Authorize(Policy = "Admin")]
         public ActionResult AddTikets([FromBody] CreateTicketDto ticket)
         {
             bool addTiket = _ticketService.AddTikets(ticket);
@@ -24,18 +26,11 @@ namespace TuEntradaYa.Controllers
         }
 
         [HttpGet]
-
         public ActionResult GetTikets() 
         {
             return Ok(_ticketService.GetTickets());
         }
 
-        //[HttpGet("{eventName}")]
-        //public ActionResult<List<Tickets>> GetTicketsByEventName(string eventName)
-        //{
-        //    var tickets = _ticketService.GetTicketsByEventName(eventName);
-        //    return Ok(tickets);
-        //}
 
         [HttpGet("{eventId}")]
         public ActionResult<List<Tickets>> GetTicketsByEventId(int eventId) 

@@ -17,5 +17,6 @@ namespace TuEntradaYa.Services.Interfaces
 
         int GetTicketsSumByEventId(int eventId);
 
+
     }
 }

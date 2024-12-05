@@ -11,5 +11,8 @@ namespace TuEntradaYa.Services.Interfaces
 
         bool DeleteOrder(int orderId);
 
+        List<Orders> GetOrderByUserName(string email, string password, string userName);
+
+
     }
 }

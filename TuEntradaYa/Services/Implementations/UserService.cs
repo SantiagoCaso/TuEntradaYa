@@ -53,7 +53,7 @@ namespace TuEntradaYa.Services.Implementations
         public bool UpdateUser(string email, string password, UserUpateDto user)
         {
 
-            Users? userToUpdate = _tuEntradaYaContext.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+            Users? userToUpdate = Authenticate(email, password);
 
             if (userToUpdate == null)
             {

@@ -203,6 +203,42 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TuEntradaYa.Controllers.OrderController",
+    "Method": "GetOrderByUserName",
+    "RelativePath": "api/orders/orders-by-user-name",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[TuEntradaYa.Models.Entities.Orders, TuEntradaYa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "TuEntradaYa.Controllers.TicketsController",
     "Method": "GetTikets",
     "RelativePath": "api/tickets",

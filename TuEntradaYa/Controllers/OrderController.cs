@@ -52,7 +52,13 @@ namespace TuEntradaYa.Controllers
             return Ok("La orden se ha eliminado");
         }
 
-
+        [HttpGet("orders-by-user-name")]
+        [Authorize]
+        public ActionResult<List<Orders>> GetOrderByUserName(string email, string password, string userName)
+        {
+            var orders = _orderService.GetOrderByUserName(email, password,userName);
+            return Ok(orders);  
+        }
 
     }
 }
