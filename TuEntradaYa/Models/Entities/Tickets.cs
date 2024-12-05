@@ -18,5 +18,7 @@ namespace TuEntradaYa.Models.Entities
 
         [ForeignKey("CategoryId")]
         public Categories? Category { get; set; }
+
+        public float Price { get; set; }    
     }
 }

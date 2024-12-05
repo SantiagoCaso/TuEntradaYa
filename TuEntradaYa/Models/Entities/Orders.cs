@@ -16,7 +16,13 @@ namespace TuEntradaYa.Models.Entities
 
         [ForeignKey("UserId")]
         public Users? Users { get; set; }
-        public float Total { get; set; }    
+
+        public int TicketId { get; set; }
+
+        [ForeignKey("TicketId")]
+        public Tickets? Tickets { get; set; }
+
+        public float Total { get; set; }
 
 
     }

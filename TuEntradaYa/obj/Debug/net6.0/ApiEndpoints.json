@@ -151,16 +151,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TuEntradaYa.Controllers.OrderDetailController",
-    "Method": "GetOrdersDetails",
-    "RelativePath": "api/orders-detail/all",
+    "ContainingType": "TuEntradaYa.Controllers.OrderController",
+    "Method": "GetAllOrders",
+    "RelativePath": "api/orders/all",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[TuEntradaYa.Models.Entities.OrdersDetail, TuEntradaYa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[TuEntradaYa.Models.Entities.Orders, TuEntradaYa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -169,6 +169,38 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "TuEntradaYa.Controllers.OrderController",
+    "Method": "DeleteOrder",
+    "RelativePath": "api/orders/Delete-order",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TuEntradaYa.Controllers.OrderController",
+    "Method": "CreateOrder",
+    "RelativePath": "api/orders/new-order",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderDto",
+        "Type": "TuEntradaYa.Models.Dtos.Orders.OrderCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "TuEntradaYa.Controllers.TicketsController",

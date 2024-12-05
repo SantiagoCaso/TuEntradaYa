@@ -12,7 +12,6 @@ namespace TuEntradaYa.DBContext
         public DbSet<Events> Events { get; set; }
         public DbSet<Categories> Categories { get; set; }
         public DbSet<Orders> Orders { get; set; }  
-        public DbSet<OrdersDetail> OrdersDetail { get; set; }
         public DbSet<Tickets> Tickets { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

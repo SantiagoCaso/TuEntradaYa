@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TuEntradaYa.DBContext;
 
@@ -10,9 +11,10 @@ using TuEntradaYa.DBContext;
 namespace TuEntradaYa.Migrations
 {
     [DbContext(typeof(TuEntradaYaContext))]
-    partial class TuEntradaYaContextModelSnapshot : ModelSnapshot
+    [Migration("20241204231249_DB modification")]
+    partial class DBmodification
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -74,6 +76,25 @@ namespace TuEntradaYa.Migrations
                     b.Property<DateTime>("CreateAt")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("TuEntradaYa.Models.Entities.OrdersDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
                     b.Property<int>("TicketId")
                         .HasColumnType("int");
 
@@ -85,11 +106,13 @@ namespace TuEntradaYa.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("OrderId");
+
                     b.HasIndex("TicketId");
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("OrdersDetail");
                 });
 
             modelBuilder.Entity("TuEntradaYa.Models.Entities.Tickets", b =>
@@ -153,21 +176,40 @@ namespace TuEntradaYa.Migrations
 
             modelBuilder.Entity("TuEntradaYa.Models.Entities.Orders", b =>
                 {
-                    b.HasOne("TuEntradaYa.Models.Entities.Tickets", "Tickets")
-                        .WithMany()
-                        .HasForeignKey("TicketId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("TuEntradaYa.Models.Entities.Users", "Users")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("TuEntradaYa.Models.Entities.OrdersDetail", b =>
+                {
+                    b.HasOne("TuEntradaYa.Models.Entities.Orders", "Orders")
+                        .WithMany()
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TuEntradaYa.Models.Entities.Tickets", "Tickets")
+                        .WithMany()
+                        .HasForeignKey("TicketId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TuEntradaYa.Models.Entities.Users", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Orders");
+
                     b.Navigation("Tickets");
 
-                    b.Navigation("Users");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("TuEntradaYa.Models.Entities.Tickets", b =>

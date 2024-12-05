@@ -11,6 +11,9 @@ namespace TuEntradaYa.Models.Dtos.Orders
 
         public int UserId { get; set; }
 
+        public int TicketId { get; set; }
+
         public float Total { get; set; }
+
     }
 }
