@@ -1,4 +1,5 @@
-﻿using TuEntradaYa.DBContext;
+﻿using Microsoft.AspNetCore.Identity;
+using TuEntradaYa.DBContext;
 using TuEntradaYa.Models.Dtos.User;
 using TuEntradaYa.Models.Entities;
 using TuEntradaYa.Services.Interfaces;
@@ -8,7 +9,7 @@ namespace TuEntradaYa.Services.Implementations
     public class UserService : IUserService
     {
         private readonly TuEntradaYaContext _tuEntradaYaContext;
-
+        private readonly PasswordHasher<Users> _passwordHasher = new();
 
         public UserService(TuEntradaYaContext tuEntradaYaContext)
         {
@@ -35,19 +36,22 @@ namespace TuEntradaYa.Services.Implementations
             {
                 Console.WriteLine("El eamil {Email} ya pertenece a una cuanta activa", newUser.Email);
             }
-             
-                Users addUser = new Users
+
+            var passwordHasher = new PasswordHasher<Users>();
+
+            Users addUser = new Users
                 {
                     Name = newUser.Name,
                     LastName = newUser.LastName,
-                    Email = newUser.Email,
-                    Password = newUser.Password,
+                    Email = newUser.Email,                    
                     Role = newUser.Role.ToString()
                 };
 
-                _tuEntradaYaContext.Users.Add(addUser);
-                _tuEntradaYaContext.SaveChanges();
-                return true;
+            addUser.Password = passwordHasher.HashPassword(addUser, newUser.Password);
+
+            _tuEntradaYaContext.Users.Add(addUser);
+            _tuEntradaYaContext.SaveChanges();
+            return true;
         }
 
         public bool UpdateUser(string email, string password, UserUpateDto user)
@@ -96,12 +100,12 @@ namespace TuEntradaYa.Services.Implementations
             return user;
         }
 
-        public Users ? Authenticate(string email, string password)
+        public Users? Authenticate(string email, string password)
         {
-            Users ? userToAuthenticate = _tuEntradaYaContext.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+            Users? userToAuthenticate = _tuEntradaYaContext.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
 
             return userToAuthenticate;
-        }   
+        }
 
     }
 }

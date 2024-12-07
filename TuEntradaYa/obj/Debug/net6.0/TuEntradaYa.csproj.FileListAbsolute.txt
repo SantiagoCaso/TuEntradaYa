@@ -57,3 +57,4 @@ C:\SourceCode\CRUD MVC .NET Core\TuEntradaYa\bin\Debug\net6.0\Microsoft.Identity
 C:\SourceCode\CRUD MVC .NET Core\TuEntradaYa\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\SourceCode\CRUD MVC .NET Core\TuEntradaYa\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\SourceCode\CRUD MVC .NET Core\TuEntradaYa\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\SourceCode\CRUD MVC .NET Core\TuEntradaYa\bin\Debug\net6.0\System.Security.Permissions.dll

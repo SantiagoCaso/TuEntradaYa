@@ -12,32 +12,32 @@ namespace TuEntradaYa.Migrations
             //migrationBuilder.DropTable(
             //    name: "OrdersDetail");
 
-            migrationBuilder.AddColumn<int>(
-                name: "TicketId",
-                table: "Orders",
-                type: "int",
-                nullable: false,
-                defaultValue: 0);
+            //migrationBuilder.AddColumn<int>(
+            //    name: "TicketId",
+            //    table: "Orders",
+            //    type: "int",
+            //    nullable: false,
+            //    defaultValue: 0);
 
-            migrationBuilder.AddColumn<float>(
-                name: "Total",
-                table: "Orders",
-                type: "float",
-                nullable: false,
-                defaultValue: 0f);
+            //migrationBuilder.AddColumn<float>(
+            //    name: "Total",
+            //    table: "Orders",
+            //    type: "float",
+            //    nullable: false,
+            //    defaultValue: 0f);
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Orders_TicketId",
-                table: "Orders",
-                column: "TicketId");
+            //migrationBuilder.CreateIndex(
+            //    name: "IX_Orders_TicketId",
+            //    table: "Orders",
+            //    column: "TicketId");
 
-            migrationBuilder.AddForeignKey(
-                name: "FK_Orders_Tickets_TicketId",
-                table: "Orders",
-                column: "TicketId",
-                principalTable: "Tickets",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+            //migrationBuilder.AddForeignKey(
+            //    name: "FK_Orders_Tickets_TicketId",
+            //    table: "Orders",
+            //    column: "TicketId",
+            //    principalTable: "Tickets",
+            //    principalColumn: "Id",
+            //    onDelete: ReferentialAction.Cascade);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

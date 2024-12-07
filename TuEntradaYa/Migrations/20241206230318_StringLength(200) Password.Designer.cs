@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TuEntradaYa.DBContext;
 
@@ -10,9 +11,10 @@ using TuEntradaYa.DBContext;
 namespace TuEntradaYa.Migrations
 {
     [DbContext(typeof(TuEntradaYaContext))]
-    partial class TuEntradaYaContextModelSnapshot : ModelSnapshot
+    [Migration("20241206230318_StringLength(200) Password")]
+    partial class StringLength200Password
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

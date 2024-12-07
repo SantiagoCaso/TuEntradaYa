@@ -21,11 +21,11 @@ namespace TuEntradaYa.Models.Entities
 
         [Required]  
         [StringLength(50)]
-        //[DataType(DataType.Password)]
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; } = string.Empty;
 
         [Required]
-        [StringLength(50)]
+        [StringLength(200)]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
